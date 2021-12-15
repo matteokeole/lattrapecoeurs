@@ -1,0 +1,51 @@
+/** Keyframes **/
+
+/* Fade in animation */
+@-webkit-keyframes fadeIn {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+@keyframes fadeIn {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/* Fade out animation */
+@-webkit-keyframes fadeOut {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+@keyframes fadeOut {
+	from {opacity: 1}
+	to {opacity: 0}
+}
+
+/* Spinning book animation */
+@-webkit-keyframes bookSpin {
+	from {-webkit-transform: rotateX(-30deg) rotateY(0)}
+	to {-webkit-transform: rotateX(-30deg) rotateY(360deg)}
+}
+@keyframes bookSpin {
+	from {transform: rotateX(-30deg) rotateY(0)}
+	to {transform: rotateX(-30deg) rotateY(360deg)}
+}
+
+/* Opening book animation */
+@-webkit-keyframes bookOpen {
+	from {-webkit-transform: rotateX(-30deg) rotateY(135deg)}
+	to {-webkit-transform: translateZ(1000px)}
+}
+@keyframes bookOpen {
+	from {transform: rotateX(-30deg) rotateY(135deg)}
+	to {transform: translateZ(1000px)}
+}
+
+/* Closing book animation */
+@-webkit-keyframes bookClose {
+	from {-webkit-transform: translateZ(1000px)}
+	to {-webkit-transform: none}
+}
+@keyframes bookClose {
+	from {transform: translateZ(1000px)}
+	to {transform: none}
+}

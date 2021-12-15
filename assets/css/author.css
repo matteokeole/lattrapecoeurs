@@ -1,0 +1,10 @@
+/** Author photo **/
+
+#author {
+	width: 440px;
+	height: 538px;
+	margin-left: 20px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .3);
+	-webkit-transform: rotateZ(-3deg);
+	transform: rotateZ(-3deg)
+}

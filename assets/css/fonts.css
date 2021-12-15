@@ -1,0 +1,13 @@
+/** Fonts **/
+
+/* Cheltenham Bold (woff) */
+@font-face {
+	font-family: "Cheltenham Bold";
+	src: url(../fonts/CheltenhamBold.woff) format("woff")
+}
+
+/* Cheltenham Light (otf) */
+@font-face {
+	font-family: "Cheltenham Light";
+	src: url(../fonts/CheltenhamLight.otf) format("opentype")
+}

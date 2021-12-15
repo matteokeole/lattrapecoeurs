@@ -1,0 +1,46 @@
+/** Main styles **/
+
+/* CSS imports */
+@import url(fonts.css);
+@import url(overlay.css);
+@import url(book.css);
+@import url(slides.css);
+@import url(author.css);
+@import url(keyframes.css);
+
+/* Variables */
+:root {
+	--page-1: #F5F2C9; /* Page color */
+	--page-2: #EFDD96 /* Page color (darker) */
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+	background-color: #000;
+	cursor: none;
+	user-select: none;
+	font-family: "Cheltenham Light", serif
+}
+
+/* Content */
+
+h1, h2 {
+	margin: 50px 0;
+	font-family: "Cheltenham Bold";
+	font-weight: normal
+}
+
+h1 {font-size: 60px}
+#title {
+	letter-spacing: 10px;
+	font-size: 75px
+}
+
+h2, p {font-size: 37.5px}

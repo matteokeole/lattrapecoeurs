@@ -1,0 +1,92 @@
+/** Book elements **/
+
+#book {
+	width: 400px;
+	height: 657px;
+	position: absolute;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-animation: bookSpin 10s infinite linear;
+	animation: bookSpin 10s infinite linear
+}
+
+/* Book faces */
+
+.face {position: absolute}
+
+/* Front, subfront, back */
+
+#front, #subfront, #back {
+	width: 400px;
+	height: 657px
+}
+
+#front {
+	background-image: url(../images/wrapper.jpg);
+	-webkit-transform: translateZ(.65cm);
+	transform: translateZ(.65cm);
+	-webkit-transform-origin: 0;
+	transform-origin: 0;
+	transition-duration: 1.5s
+}
+
+#subfront {
+	line-height: 657px;
+	background-image: url(../images/page.jpg);
+	text-align: center;
+	-webkit-transform: translateZ(.64cm);
+	transform: translateZ(.64cm)
+}
+
+#back {
+	background-color: var(--page-1);
+	text-align: justify;
+	-webkit-transform: rotateY(180deg) translateZ(.65cm);
+	transform: rotateY(180deg) translateZ(.65cm)
+}
+
+#back #description {
+	padding: 36px 36px 0 36px;
+	font-size: 18px
+}
+
+#back #comment {
+	padding: 18px 36px 0 36px;
+	font-size: 16px
+}
+
+/* Left, right */
+#left, #right {
+	width: 657px;
+	height: 1.3cm;
+	-webkit-filter: brightness(97%);
+	filter: brightness(97%)
+}
+#left {
+	line-height: 1.3cm;
+	background-color: var(--page-1);
+	text-align: center;
+	font-size: 24px;
+	-webkit-transform: rotateX(90deg) rotateY(270deg) translateX(-303.5px) translateZ(328.5px);
+	transform: rotateX(90deg) rotateY(270deg) translateX(-303.5px) translateZ(328px)
+}
+#right {
+	background: repeating-linear-gradient(var(--page-2), var(--page-2) 1px, var(--page-1) 2px, var(--page-1) 4px);
+	-webkit-transform: rotateX(90deg) rotateY(270deg) translateX(-303.5px) translateZ(-67px);
+	transform: rotateX(90deg) rotateY(270deg) translateX(-303.5px) translateZ(-67px)
+}
+
+/* Top, bottom */
+#top, #bottom {
+	width: 400px;
+	height: 1.3cm;
+	background: repeating-linear-gradient(var(--page-2), var(--page-2) 1px, var(--page-1) 2px, var(--page-1) 4px)
+}
+#top {
+	-webkit-transform: rotateX(90deg) translateZ(.65cm);
+	transform: rotateX(90deg) translateZ(.65cm)
+}
+#bottom {
+	-webkit-transform: rotateX(90deg) translateZ(-628.5px);
+	transform: rotateX(90deg) translateZ(-628.5px)
+}
